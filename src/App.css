@@ -1,67 +1,80 @@
 :root {
-  --color-212529: #212529;
-  --color-ffd333: #4B0082;
-  --color-47ad24: #47ad24;
-  --color-e52e2e: #e52e2e;
-  --color-828599: #828599;
-  --color-3d464d: #ed464d;
-  --color-c3d4da: #ced4da;
+  --color-primary-pink: #E8A5C4; 
+  --color-secondary-pink: #D192AE; 
+  --color-dark-gray: #333333; 
+  --color-medium-gray: #666666; 
+  --color-light-gray: #999999; 
+  --color-background-light: #f8f8f8; 
+  --color-background-white: #ffffff; 
+  --color-border-light: #e0e0e0; 
+  --color-success: #52c41a;
+  --color-error: #d9534f; 
 }
 
 .green {
-  color: var(--color-47ad24);
+  color: var(--color-success);
   font-size: 14px;
-  font-family: Roboto !important;
+  font-family: Arial, sans-serif !important;
 }
 .red {
-  color: var(--color-212529);
+  color: var(--color-error); 
   font-size: 14px;
-  font-family: Roboto !important;
+  font-family: Arial, sans-serif !important; 
 }
 .quill {
-  background-color: white;
+  background-color: var(--color-background-white); 
 }
 
 .form-control {
   box-shadow: none;
-  border-color: var(--color-c3d4da);
+  border-color: var(--color-border-light); 
 }
 .title {
-  font: 28px;
-  font-family: Roboto !important;
-  color: var(--color-212529);
+  font-size: 28px; 
+  font-family: Arial, sans-serif !important; 
+  color: var(--color-dark-gray); 
+  font-weight: 400; 
 }
 
 .sub-title {
-  font: 24px;
-  font-family: Roboto !important;
-  color: var(--color-212529);
+  font-size: 24px; 
+  font-family: Arial, sans-serif !important; 
+  color: var(--color-dark-gray); 
+  font-weight: 400; 
 }
 .desc {
-  font: 14px;
-  font-family: Roboto !important;
-  color: var(--color-828599);
+  font-size: 14px; 
+  font-family: Arial, sans-serif !important;
+  color: var(--color-light-gray); 
+  font-weight: 400;
 }
 
 .dashboard-menu-item {
-  background-color: #fce3ad !important;
+  background-color: var(--color-secondary-pink) !important; 
+  color: var(--color-background-white) !important; 
 }
 
 .ant-menu-item-selected {
-  background-color: #fce3ad !important;
+  background-color: var(--color-secondary-pink) !important;
+  color: var(--color-background-white) !important; 
 }
 
-
-
 button {
-  background-color: #fce3ad !important; 
+  background-color: var(--color-primary-pink) !important; 
+  color: var(--color-background-white) !important; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-family: Arial, sans-serif !important; 
+  font-weight: 500 !important;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #218838; 
+  background-color: var(--color-secondary-pink) !important; 
+  cursor: pointer;
 }
 
-
-icon {
-  color: #4B0082 !important;
+.anticon,
+.fs-4 { 
+  color: var(--color-primary-pink) !important; 
 }

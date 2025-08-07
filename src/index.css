@@ -1,5 +1,18 @@
+:root {
+  --color-primary-pink: #000c17; 
+  --color-secondary-pink: #D192AE;
+  --color-dark-gray: #333333; 
+  --color-medium-gray: #666666;
+  --color-light-gray: #999999; 
+  --color-background-light: #f8f8f8; 
+  --color-background-white: #ffffff; 
+  --color-border-light: #e0e0e0;
+  --color-success: #52c41a; 
+  --color-error: #d9534f; 
+}
+
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Arial, sans-serif; 
 }
 
 .trigger {
@@ -8,17 +21,22 @@ body {
   line-height: 64px;
   cursor: pointer;
   transition: color 0.3s;
+  color: var(--color-primary-pink); 
 }
 
 .trigger:hover {
-  /* color: #1890ff; */
+  color: var(--color-secondary-pink); 
 }
 
 .logo {
-  height: 32px;
-  margin: 16px;
-  /* background: rgba(255, 255, 255, 0.3);  */
+  height: 64px; 
+  margin: 0; 
+  background-color: var(--color-secondary-pink);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
+
 .ant-layout {
   min-height: 100vh;
 }
@@ -27,6 +45,7 @@ body {
   max-width: 250px !important;
   min-width: 250px !important;
   width: 250px !important;
+  background-color: #000c17 !important; 
 }
 .ant-layout-sider-collapsed {
   flex: 0 0 80px !important;
@@ -44,35 +63,45 @@ body {
 .ant-layout-sider-collapsed .lg-logo {
   display: none;
 }
-.logo {
-  background-color: #4B0082;
-  margin: 0;
-  height: 64px;
-}
+
 main {
   height: 85vh;
   overflow-y: scroll;
-  background-color: transparent !important;
+  background-color: var(--color-background-light) !important; 
 }
 main::-webkit-scrollbar {
   width: 0px;
 }
 .ant-menu-title-content {
   font-size: 16px;
+  font-family: Arial, sans-serif !important; 
+  color: var(--color-background-white) !important; 
 }
+
+
+.ant-layout-header {
+  background-color: var(--color-background-white) !important; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+
 .ant-layout-header h5 {
   line-height: 20px;
   font-size: 14px;
+  color: var(--color-dark-gray); 
+  font-family: Arial, sans-serif !important; 
 }
 .ant-layout-header p {
   line-height: 20px;
   font-size: 13px;
+  color: var(--color-medium-gray); 
+  font-family: Arial, sans-serif !important; 
 }
 .ant-layout-header div .badge {
   top: 16px;
   right: -6px;
 }
 .error {
-  color: red;
+  color: var(--color-error); 
   font-size: 12px;
+  font-family: Arial, sans-serif !important; 
 }

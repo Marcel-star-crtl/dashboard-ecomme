@@ -29,7 +29,7 @@ export const getAColor = createAsyncThunk(
     try {
       return await colorService.getColor(id);
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.response.data.message); // Send back error message
+      return thunkAPI.rejectWithValue(error.response.data.message); 
     }
   }
 );
